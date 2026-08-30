@@ -121,9 +121,10 @@ form.addEventListener("submit", (e) => {
       //I get the object of the base currency, then I access it to get the exchange rate.
       let exchangeRate = res[base.toLowerCase()][targetCurrency.toLowerCase()]; 
       // input amount to excahnge
-      let conversion = (fromAmount * exchangeRate).toFixed(3);
+      let conversion = (fromAmount * exchangeRate).toFixed(2);
 
       span3.textContent = conversion; // Display result
+      amountInp.value = "" 
     })
     .catch((error) => {
       // Handle network errors or thrown exceptions
