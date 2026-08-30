@@ -1,0 +1,200 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  /* Modern Deep Gradient Background */
+  background: linear-gradient(135deg, #0f172a 0%, #1e1b4b 50%, #311042 100%);
+  color: #ffffff;
+}
+
+/* Glassmorphism Card Container */
+.container {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  padding: 2.5rem 2rem;
+  border-radius: 1.5rem;
+  width: 380px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4),
+              0 0 50px rgba(175, 77, 152, 0.15);
+}
+
+.container h2 {
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  background: linear-gradient(135deg, #ffffff 0%, #cbd5e1 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 0.5rem;
+}
+
+form {
+  margin-top: 1.5rem;
+}
+
+/* Amount Input Field Styling */
+.amount label,
+.from label,
+.to label {
+  display: block;
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: #cbd5e1;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+}
+
+form input {
+  width: 100%;
+  height: 3.2rem;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1.5px solid rgba(255, 255, 255, 0.15);
+  border-radius: 0.85rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #ffffff;
+  padding: 0 1rem;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+form input:focus {
+  border-color: #c084fc;
+  box-shadow: 0 0 15px rgba(192, 132, 252, 0.3);
+  background: rgba(255, 255, 255, 0.1);
+}
+
+form input::placeholder {
+  color: #64748b;
+}
+
+/* Dropdown Section Layout */
+.dropdown {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1.5rem;
+  gap: 0.5rem;
+}
+
+/* Arrow Icon Effect */
+.dropdown i {
+  font-size: 1.2rem;
+  margin-top: 1.5rem;
+  color: #c084fc;
+  background: rgba(192, 132, 252, 0.1);
+  padding: 0.7rem;
+  border-radius: 50%;
+  border: 1px solid rgba(192, 132, 252, 0.2);
+  transition: all 0.3s ease;
+}
+
+.dropdown i:hover {
+  transform: rotate(180deg);
+  background: rgba(192, 132, 252, 0.25);
+}
+
+/* Select Container with Flag & Dropdown */
+.select-container {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  width: 7.2rem;
+  height: 3.2rem;
+  padding: 0 0.6rem;
+  border-radius: 0.85rem;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1.5px solid rgba(255, 255, 255, 0.15);
+  transition: all 0.3s ease;
+}
+
+.select-container:hover {
+  border-color: rgba(255, 255, 255, 0.3);
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.select-container img {
+  width: 1.8rem;
+  height: 1.3rem;
+  object-fit: cover;
+  border-radius: 0.2rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.select-container select {
+  width: 100%;
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+/* Option styling for dropdown items */
+.select-container select option {
+  background-color: #1e1b4b;
+  color: #ffffff;
+  font-weight: 500;
+  padding: 10px;
+}
+
+/* Result Message Styling */
+.msg {
+  margin: 1.8rem 0;
+  padding: 0.8rem;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 0.85rem;
+  text-align: center;
+  font-size: 1.05rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  color: #38bdf8;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.msg span {
+  font-weight: 700;
+}
+
+/* Convert Button Styling */
+form button {
+  width: 100%;
+  height: 3.2rem;
+  background: linear-gradient(135deg, #a855f7 0%, #ec4899 100%);
+  color: #ffffff;
+  border: none;
+  outline: none;
+  border-radius: 0.85rem;
+  font-size: 1.05rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  box-shadow: 0 10px 20px rgba(168, 85, 247, 0.3);
+  transition: all 0.3s ease;
+}
+
+form button:hover {
+  opacity: 0.95;
+  box-shadow: 0 12px 25px rgba(168, 85, 247, 0.5);
+  transform: translateY(-2px);
+}
+
+form button:active {
+  transform: translateY(0);
+}
