@@ -6,7 +6,7 @@ This project uses a currency API to get exchange rates and convert an amount fro
 
 ## 🌐 Live Demo
 
-- **Live Link:** [Live-Demo]()
+- **Live Link:** [Live-Demo](https://tonmoyislam-deventest.github.io/currency-converter/)
 
 ## 📸 Preview
 
@@ -100,4 +100,4 @@ I added checks for `response.ok` and handled common HTTP errors such as `404` an
 ## 📬 Contact
 
 - **GitHub:** [GitHub-Profile](https://github.com/tonmoyislam-deventest)
-- **LinkedIn:** [LinkedIn-Profile]()
+- **LinkedIn:** [LinkedIn-Profile](https://www.linkedin.com/in/tonmoy-islam12/)
